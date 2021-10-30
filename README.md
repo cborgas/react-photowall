@@ -1,4 +1,4 @@
-# cborgas\photowall
+# cborgas\react-photowall
 
 My first small react project for learning. Completed from [The Complete React Js & Redux Course - Build Modern Web Apps](https://www.udemy.com/share/101y3m3@ADQ_Pv6xw8Yc8v9q5inWfDoC_AtHpakD_t4BONzX8nO3xnUkmi1ZT4kVD08qmXC3/) on [Udemy](udemy.com).
 
