@@ -2,16 +2,17 @@ import React from "react";
 import Photo from "./Photo";
 import { Link } from "react-router-dom";
 
-function PhotoWall({ posts, onRemovePhoto }) {
+function PhotoWall(props) {
   return (
     <div>
       <Link className="add-icon" to="/add"></Link>
       <div className="photo-grid">
-        {posts
+        {props.posts
           .sort((first, second) => second.submitted - first.submitted)
           .map((post, index) => (
-          <Photo key={index} post={post} onRemovePhoto={onRemovePhoto}/>
-        ))}
+            <Photo key={index} post={post} {...props} index={index}/>
+          )
+        )}
       </div>
     </div>
   );

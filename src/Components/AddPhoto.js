@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { now } from "../Utilities/Time";
+import { now } from "../utilities/time";
 
 class AddPhoto extends Component {
     constructor() {
@@ -19,14 +19,14 @@ class AddPhoto extends Component {
         }
 
         if (link && description) {
-            this.props.onAddPhoto(post)
+            this.props.addPost(post);
+            this.props.history.push('/');
         }
     }
 
     render() {
         return (
             <div>
-                <h1> Add a photo </h1>
                 <div className="form">
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" placeholder="Link" name="link" />
